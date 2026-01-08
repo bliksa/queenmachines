@@ -74,8 +74,11 @@ The game uses a placeholder sprite system with colored squares displaying animat
 To replace the placeholder squares with actual sprites:
 
 1. **Sprite Naming Convention**: 
-   - Format: `p{player}_${animation}_${frame}.png`
-   - Example: `p1_idle_0.png`, `p1_punch_1.png`, `p2_kick_3.png`
+   - Format: `p{player}_{animation}_{frame}.png`
+   - Examples: 
+     - `p1_idle_0.png` - Player 1, idle animation, frame 0
+     - `p1_punch_1.png` - Player 1, punch animation, frame 1
+     - `p2_kick_3.png` - Player 2, kick animation, frame 3
 
 2. **Sprite Dimensions**:
    - Width: 60 pixels

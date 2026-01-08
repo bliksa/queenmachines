@@ -107,7 +107,7 @@ class Fighter {
         const controls = this.playerNumber === 1 ? 
             {left: 'a', right: 'd', up: 'w', down: 's', punch: 'j', kick: 'k', block: 'l'} :
             {left: 'ArrowLeft', right: 'ArrowRight', up: 'ArrowUp', down: 'ArrowDown', 
-             punch: '1', kick: '2', block: '3'}; // Numpad 1, 2, 3 (or regular 1, 2, 3)
+             punch: '1', kick: '2', block: '3'}; // Regular number keys 1, 2, 3
         
         // Blocking
         if (keys[controls.block]) {
@@ -276,9 +276,11 @@ class Fighter {
         ctx.font = '8px Arial';
         ctx.textAlign = 'center';
         
+        // Sprite filename for future integration
+        // Format: p{player}_{animation}_{frame}.png
         const spriteFilename = `p${this.playerNumber}_${this.currentAnimation}_${this.animationFrame}.png`;
         
-        // Split filename for better display
+        // Display animation info on placeholder
         ctx.fillText(`P${this.playerNumber}`, this.width/2, 20);
         ctx.fillText(this.currentAnimation, this.width/2, 35);
         ctx.fillText(`frame ${this.animationFrame}`, this.width/2, 50);
