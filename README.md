@@ -42,9 +42,9 @@ A browser-based fighting game template inspired by the original Mortal Kombat, b
 - **↓** - Crouch
 - **←** - Move Left
 - **→** - Move Right
-- **Numpad 1 (End key)** - Punch (5 damage)
-- **Numpad 2 (Down Arrow)** - Kick (8 damage)
-- **Numpad 3 (PageDown)** - Block (reduces damage by 66%)
+- **1** - Punch (5 damage)
+- **2** - Kick (8 damage)
+- **3** - Block (reduces damage by 66%)
 
 ### Game Rules
 

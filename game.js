@@ -107,7 +107,7 @@ class Fighter {
         const controls = this.playerNumber === 1 ? 
             {left: 'a', right: 'd', up: 'w', down: 's', punch: 'j', kick: 'k', block: 'l'} :
             {left: 'ArrowLeft', right: 'ArrowRight', up: 'ArrowUp', down: 'ArrowDown', 
-             punch: 'End', kick: 'ArrowDown', block: 'PageDown'}; // Num1, Num2, Num3
+             punch: '1', kick: '2', block: '3'}; // Numpad 1, 2, 3 (or regular 1, 2, 3)
         
         // Blocking
         if (keys[controls.block]) {
